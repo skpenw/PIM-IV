@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STARTUPYX - Cadastro</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url("https://images.adsttc.com/media/images/614c/e924/9f45/c901/646d/e341/large_jpg/fazenda-urbana-ifood-begreen-2.jpg?1632430378");
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+
+        h2 {
+            font-size: 30px;
+            text-shadow: 
+                0 0 5px rgba(255, 255, 255, 0.7), 
+                0 0 10px rgba(255, 255, 255, 0.7), 
+                0 0 20px rgb(37, 5, 5), 
+                0 0 30px rgba(37, 5, 5, 0.7);
+            animation: glow 1.5s infinite alternate;
+        }
+
+        #header {
+            font-size: 2rem;
+            padding-left: 1%;
+            background-color: beige;
+            display: flex;
+            align-items: center;
+            height: 7.5vh;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            z-index: 1000;
+        }
+
+        #header a {
+            text-decoration: none;
+            color: black;
+        }
+
+        #header img {
+            max-width: 7vw;
+            max-height: 7vh;
+        }
+
+        .main-body {
+            background-color: beige;
+            border-radius: 15px;
+            width: 30vw;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        .main-body h2 {
+            margin-bottom: 20px;
+            color: black;
+        }
+
+        .main-body .campos {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .main-body .campos input {
+            margin-bottom: 15px;
+            width: 75%;
+            height: 10%;
+            border: 0;
+            border-radius: 5px;
+            padding: 10px;
+        }
+
+        .main-body .campos input[type="submit"] {
+            background-color: rgb(37, 5, 5);
+            color: white;
+            cursor: pointer;
+        }
+
+        .main-body .campos input[type="submit"]:hover {
+            background-color: rgb(11, 71, 14);
+            border: 1px solid black;
+        }
+
+        .main-body .campos a {
+            margin-top: -15px;
+            margin-bottom: 7px;
+            text-decoration: none;
+            color: rgb(37, 5, 5);
+        }
+
+        .main-body .criar-conta {
+            margin-top: 10px;
+        }
+
+        .main-body .criar-conta label {
+            color: black;
+        }
+
+        .main-body .criar-conta #criar-conta-div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: beige;
+            border-radius: 10px;
+            height: 10vh;
+            width: 30vw;
+        }
+
+        .main-body .criar-conta #criar-conta-div a {
+            color: rgb(37, 5, 5);
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <a href="index.html"> 
+            <img src="https://png.pngtree.com/element_our/png_detail/20181229/sprout-plant-graphic-icon-design-template-png_301529.jpg">
+        </a>
+        <a href="index.html">Startupyx</a>
+    </div>
+
+    <div class="main-body">
+        <h2>Cadastro</h2>
+        <div class="campos">
+            <input type="text" id="name" placeholder="Nome Completo" required>
+            <input type="email" id="email" placeholder="example@gmail.com" maxlength="50" pattern="[a-z0-9._%+\-]{1,50}+@[a-z0-9.\-]+\.[a-z]{2,}$" required>
+            <input type="password" id="password" placeholder="Crie uma senha" minlength="8" maxlength="20" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+            <input type="password" id="confirm-password" placeholder="Confirme sua senha" minlength="8" maxlength="20" required>
+            <input type="submit" id="submit" value="Cadastrar" onclick="redirecionarCompra()">
+        </div>
+
+        <div class="criar-conta">
+            <label>Já possui conta?</label>
+            <div id="criar-conta-div">
+                <a id="criar-conta-link" href="loginge.html">Fazer Login</a>
+            </div>
+        </div>
+        <header>
+            <br>
+            <a href="homeprincipal.html">Voltar</a>
+            <br>
+            <br>
+        </header>
+    </div>
+
+    <script>
+        function redirecionarCompra() {
+            location.href = 'gerente.html'; 
+        }
+    </script>
+</body>
+</html>

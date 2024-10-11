@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STARTUPYX - Opções de Compra</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: green;
+            background-image: url("https://images.adsttc.com/media/images/614c/e924/9f45/c901/646d/e341/large_jpg/fazenda-urbana-ifood-begreen-2.jpg?1632430378");
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+
+        h2 {
+            font-size: 30px;
+            text-shadow: 
+                0 0 5px rgba(255, 255, 255, 0.7), 
+                0 0 10px rgba(255, 255, 255, 0.7), 
+                0 0 20px rgb(37, 5, 5), 
+                0 0 30px rgba(37, 5, 5, 0.7);
+            animation: glow 1.5s infinite alternate;
+        }
+
+        #header {
+            font-size: 2rem;
+            padding-left: 1%;
+            background-color: beige;
+            display: flex;
+            align-items: center;
+            height: 7.5vh;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            z-index: 1000;
+        }
+
+        #header a {
+            text-decoration: none;
+            color: black;
+        }
+
+        #header img {
+            max-width: 7vw;
+            max-height: 7vh;
+        }
+
+        .main-body {
+            background-color: beige;
+            border-radius: 15px;
+            width: 30vw;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        .main-body h2 {
+            margin-bottom: 20px;
+            color: black;
+        }
+
+        .main-body .campos {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .main-body .campos input,
+        .main-body .campos select {
+            margin-bottom: 15px;
+            width: 75%;
+            height: 10%;
+            border: 0;
+            border-radius: 5px;
+            padding: 10px;
+        }
+
+        .main-body .campos input[type="submit"] {
+            background-color: rgb(37, 5, 5);
+            color: white; /* Mudança para deixar a fonte branca */
+            cursor: pointer;
+        }
+
+        .main-body .campos input[type="submit"]:hover {
+            border: 1px solid black;
+        }
+
+        .main-body .campos a {
+            margin-top: -15px;
+            margin-bottom: 7px;
+            text-decoration: none;
+            color: rgb(37, 5, 5);
+        }
+
+        .main-body .criar-conta {
+            margin-top: 10px;
+        }
+
+        .main-body .criar-conta label {
+            color: black;
+        }
+
+        .main-body .criar-conta #criar-conta-div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: beige;
+            border-radius: 10px;
+            height: 10vh;
+            width: 30vw;
+        }
+
+        .main-body .criar-conta #criar-conta-div a {
+            color: rgb(37, 5, 5);
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <a href="index.html"> 
+            <img src="https://png.pngtree.com/element_our/png_detail/20181229/sprout-plant-graphic-icon-design-template-png_301529.jpg">
+        </a>
+        <a href="index.html">Startupyx</a>
+    </div>
+
+    <div class="main-body">
+        <h2>Opções de Compra</h2>
+        <div class="campos">
+            <select id="product-name" required>
+                <option value="" disabled selected>Selecione o Produto</option>
+                <option value="produto1">Produto 1</option>
+                <option value="produto2">Produto 2</option>
+                <option value="produto3">Produto 3</option>
+            </select>
+            <select id="unit-measure" required>
+                <option value="" disabled selected>Unidade de Medida</option>
+                <option value="kg">Kg</option>
+                <option value="litro">Litro</option>
+                <option value="unidade">Unidade</option>
+            </select>
+            <select id="storage-type" required>
+                <option value="" disabled selected>Tipo de Armazenamento</option>
+                <option value="frio">Frio</option>
+                <option value="seco">Seco</option>
+                <option value="temperatura_ambiente">Temperatura Ambiente</option>
+            </select>
+            <input type="number" id="price" placeholder="Preço" required>
+            <input type="submit" id="submit" value="Efetuar Compra">
+        </div>
+        <header>
+            <br>
+            <a href="funcionario.html">Voltar para o painel funcionario</a>
+            <br>
+            <br>
+        </header>
+    </div>
+</body>
+</html>

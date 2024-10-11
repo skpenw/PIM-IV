@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatório de Plantação</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: green;
+            background-image: url("https://images.adsttc.com/media/images/614c/e924/9f45/c901/646d/e341/large_jpg/fazenda-urbana-ifood-begreen-2.jpg?1632430378");
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        h2 {
+            font-size: 30px;
+            color: black;
+            margin-bottom: 20px;
+        }
+
+        .main-body {
+            background-color: beige;
+            border-radius: 15px;
+            width: 30vw;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .main-body .campos {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .main-body .campos input {
+            margin-bottom: 15px;
+            width: 75%;
+            height: 10%;
+            border: 0;
+            border-radius: 5px;
+            padding: 10px;
+        }
+
+        .main-body .campos input[type="submit"] {
+            background-color: rgb(37, 5, 5);
+            color: white;
+            cursor: pointer;
+        }
+
+        .main-body .campos input[type="submit"]:hover {
+            background-color: rgb(11, 71, 14);
+            border: 1px solid black;
+        }
+
+        header {
+            margin-top: 20px;
+        }
+
+        header a {
+            color: rgb(37, 5, 5);
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-body">
+        <h2>Relatório de Plantação</h2>
+        <div class="campos">
+            <input type="text" placeholder="ID da Plantação" required>
+            <input type="text" placeholder="Quantidade" required>
+            <input type="text" placeholder="Nome da Plantação" required>
+            <input type="submit" value="Enviar">
+        </div>
+        <header>
+            <a href="gerente.html">Voltar para o Painel do Gerente</a>
+        </header>
+    </div>
+</body>
+</html>

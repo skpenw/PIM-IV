@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel de Controle - Gerente</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: green;
+            background-image: url("https://images.adsttc.com/media/images/614c/e924/9f45/c901/646d/e341/large_jpg/fazenda-urbana-ifood-begreen-2.jpg?1632430378");
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        h2 {
+            font-size: 30px;
+            color: black;
+            margin-bottom: 20px;
+        }
+
+        .main-body {
+            background-color: beige;
+            border-radius: 15px;
+            width: 40vw;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .main-body .campos {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .main-body .campos input {
+            margin-bottom: 15px;
+            width: 75%;
+            height: 10%;
+            border: 0;
+            border-radius: 5px;
+            padding: 10px;
+        }
+
+        .main-body .campos input[type="submit"] {
+            background-color: rgb(37, 5, 5);
+            color: white;
+            cursor: pointer;
+        }
+
+        .main-body .campos input[type="submit"]:hover {
+            background-color: rgb(11, 71, 14);
+            border: 1px solid black;
+        }
+
+        .relatorio {
+            margin-top: 30px;
+        }
+
+        .relatorio input[type="button"] {
+            margin: 10px 0;
+            width: 75%;
+            height: 40px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            color: white;
+            background-color: rgb(11, 71, 14);
+        }
+
+        .relatorio input[type="button"]:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-body">
+        <h2>Painel Gerente</h2>
+
+        <div class="campos">
+            <h3>Futuros Plantios</h3>
+            <input type="text" placeholder="Estação" required>
+            <input type="text" placeholder="Região" required>
+            <input type="text" placeholder="Plantas Recomendadas" required>
+            <input type="text" placeholder="Tipo de Cultivo" required>
+            <input type="submit" value="Enviar">
+        </div>
+
+        <div class="relatorio">
+            <h3>Relatórios</h3>
+            <input type="button" value="Relatório de Plantação" onclick="location.href='relatorioPlantacao.html';">
+            <input type="button" value="Relatório de Estoque" onclick="location.href='relatorioEstoque.html';">
+            <input type="button" value="Relatório de Vendas" onclick="location.href='relatorioVendas.html';">
+        </div>
+
+        <header>
+            <br>
+            <a href="homeprincipal.html">Voltar</a>
+            <br>
+            <br>
+        </header>
+    </div>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STARTUPYX - Página inicial</title>
+    <style>
+        h1 {
+            font-size: 48px;
+            text-shadow: 
+                0 0 5px rgba(255, 255, 255, 0.7), 
+                0 0 10px rgba(255, 255, 255, 0.7), 
+                0 0 20px rgba(3, 107, 34, 0.7), 
+                0 0 30px rgba(3, 107, 34, 0.7);
+            animation: glow 1.5s infinite alternate;
+        }
+        @keyframes glow {
+            0% {
+                text-shadow: 
+                    0 0 5px rgba(3, 107, 34, 0.7),
+                    0 0 10px rgba(3, 107, 34, 0.5);
+            }
+            100% {
+                text-shadow: 
+                    0 0 10px rgb(9, 243, 29),
+                    0 0 20px rgba(26, 172, 70, 0.7),
+                    0 0 30px rgba(3, 107, 34, 0.7);
+            }
+        }
+        body {
+            background-color: rgb(11, 70, 11);
+            margin: 0;
+        }
+        #body {
+            position: absolute;
+            padding-top: 7%;
+            color: beige;
+            padding-left: 5vw;
+            padding-right: 5vw;
+            margin-right: 5%;
+        }
+        #body #subtittle {
+            font-size: 27px;
+        }
+        #body p {
+            font-size: 20px;
+        }
+        .buttons #button1
+        {
+            background: linear-gradient(45deg, #2c6338, #0d421a);
+            border: none;
+            border-radius: 50px;
+            color: white;
+            padding: 15px 30px;
+            font-size: 18px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            cursor: pointer;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+            margin: 20px 0;
+        }
+        .buttons #button2 {
+            background: linear-gradient(45deg, #2c6338, #0d421a);
+            border: none;
+            border-radius: 50px;
+            color: white;
+            padding: 15px 30px;
+            font-size: 18px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            cursor: pointer;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+            margin: 20px 0;
+        }
+        #header {
+            position: absolute;
+            font-size: 2rem;
+            padding-left: 1%;
+            background-color: beige;
+            display: flex;
+            align-items: center;
+            height: 7.5vh;
+            width: 99vw;
+        }
+        #header a {
+            text-decoration: none;
+            color: black;
+        }
+        #header img {
+            max-width: 7vw;
+            max-height: 7vh;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <a href="index.html">
+            <img src="https://png.pngtree.com/element_our/png_detail/20181229/sprout-plant-graphic-icon-design-template-png_301529.jpg">
+        </a>
+        <a href="index.html">Startupyx</a>
+    </div>
+
+    <div id="body">
+        <h1>STARTUPYX</h1>
+        <p id="subtittle">Alimentando o Futuro Sustentável</p>
+        <p>
+            A STARTUPYX é uma fazenda urbana vertical comprometida em fornecer alimentos saudáveis e de alta qualidade. 
+            Nossa abordagem sustentável e inovadora soluciona desafios alimentares. Com técnicas avançadas de hidroponia, 
+            reduzimos o uso de água e eliminamos agrotóxicos. Junte-se a nós para transformar a forma como cultivamos e consumimos alimentos.
+            Bem-vindo à STARTUPYX, onde inovação e sustentabilidade se encontram para criar um futuro melhor.
+        </p>
+
+        <div class="buttons">
+            <button id="button1" onclick="window.location.href='homeprincipal.html'">Login</button>
+            <button id="button1" onclick="window.location.href='homeprincipal.html'">Cadastre-se</button>
+            
+        </div>
+    </div>
+
+</body>
+</html>

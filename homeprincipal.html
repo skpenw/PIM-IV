@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escolha de Função - STARTUPYX</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: green;
+            background-image: url("https://images.adsttc.com/media/images/614c/e924/9f45/c901/646d/e341/large_jpg/fazenda-urbana-ifood-begreen-2.jpg?1632430378");
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+
+        h2 {
+            font-size: 30px;
+            color: black;
+            margin-bottom: 20px;
+        }
+
+        .main-body {
+            background-color: beige;
+            border-radius: 15px;
+            width: 30vw;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        .main-body input[type="button"] {
+            margin: 10px 0;
+            width: 75%;
+            height: 40px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            color: white;
+        }
+
+        .funcionario {
+            background-color: rgb(37, 5, 5);
+        }
+
+        .gerente {
+            background-color: rgb(11, 71, 14);
+        }
+
+        .main-body input[type="button"]:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main-body">
+        <h2>Escolha sua função</h2>
+        <input type="button" class="funcionario" value="Funcionário Login" onclick="location.href='loginfun.html';">
+        <input type="button" class="funcionario" value="Funcionário Cadastro" onclick="location.href='cadastrofun.html';">
+        <input type="button" class="gerente" value="Gerente Login" onclick="location.href='loginge.html';">
+        <input type="button" class="gerente" value="Gerente Cadastro" onclick="location.href='cadastroge.html';">
+        <br>
+        <a href="index.html">Voltar para tela inicial</a>
+        <br>
+        <br>
+    </div>
+    
+</body>
+</html>

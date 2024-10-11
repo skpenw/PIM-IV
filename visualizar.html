@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STARTUPYX - Visualizar Plantação</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url("https://images.adsttc.com/media/images/614c/e924/9f45/c901/646d/e341/large_jpg/fazenda-urbana-ifood-begreen-2.jpg?1632430378");
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+
+        h2 {
+            font-size: 30px;
+            text-shadow: 
+                0 0 5px rgba(255, 255, 255, 0.7), 
+                0 0 10px rgba(255, 255, 255, 0.7), 
+                0 0 20px rgb(37, 5, 5), 
+                0 0 30px rgba(37, 5, 5, 0.7);
+            animation: glow 1.5s infinite alternate;
+        }
+
+        #header {
+            font-size: 2rem;
+            padding-left: 1%;
+            background-color: beige;
+            display: flex;
+            align-items: center;
+            height: 7.5vh;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            z-index: 1000;
+        }
+
+        #header a {
+            text-decoration: none;
+            color: black;
+        }
+
+        #header img {
+            max-width: 7vw;
+            max-height: 7vh;
+        }
+
+        .main-body {
+            background-color: beige;
+            border-radius: 15px;
+            width: 30vw;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            margin-top: 150px; /* Para dar mais espaço para o header */
+        }
+
+        .main-body h2 {
+            margin-bottom: 20px;
+            color: black;
+        }
+
+        .campos {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .campos input, .campos select {
+            margin-bottom: 15px;
+            width: 75%;
+            height: 10%;
+            border: 0;
+            border-radius: 5px;
+            padding: 10px;
+        }
+
+        .campos input[type="submit"] {
+            background-color: rgb(37, 5, 5);
+            color: white;
+            cursor: pointer;
+        }
+
+        .campos input[type="submit"]:hover {
+            background-color: rgb(11, 71, 14);
+            border: 1px solid black;
+        }
+
+        header {
+            margin-top: 20px;
+        }
+
+        header a {
+            color: rgb(37, 5, 5);
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <a href="index.html"> 
+            <img src="https://imgs.search.brave.com/U67Hgjpcy0NFqQoWER614uA-br0EDUGbWPZ3ieUir8c/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzA4LzE4LzI3Lzky/LzM2MF9GXzgxODI3/OTI4MF9sOVYzTTdH/QnlBWU1xRDNBNnRt/eWprZnJBZm9TcFp4/QS5qcGc">
+        </a>
+        <a href="index.html">Startupyx</a>
+    </div>
+
+    <div class="main-body">
+        <h2>Visualizar Plantação</h2>
+        <div class="campos">
+            <input type="text" id="id-plantacao" placeholder="ID da Plantação" required>
+            <input type="text" id="tipo-cultivo" placeholder="Tipo de Cultivo" required>
+            <input type="number" id="sacos-semente" placeholder="Sacos de Semente" min="0" required>
+            <input type="number" id="sacos-adubo" placeholder="Sacos de Adubo" min="0" required>
+            <input type="text" id="tipo-plantio" placeholder="Tipo de Plantio" required>
+
+            <input type="submit" value="Enviar">
+        </div>
+
+        <header>
+            <br>
+            <a href="funcionario.html">Voltar para o Painel do Funcionário</a>
+            <br>
+            <br>
+        </header>
+    </div>
+</body>
+</html>
